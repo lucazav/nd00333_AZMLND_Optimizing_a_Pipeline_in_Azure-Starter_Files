@@ -64,10 +64,6 @@ def main():
     model_file_name = 'bankmarketing_hyperdrive.pkl'
     joblib.dump(value=model, filename=os.path.join(OUTPUT_DIR, model_file_name))
 
-# TODO: Create TabularDataset using TabularDatasetFactory
-# Data is located at:
-# "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
-
 # +
 from azureml.core import Dataset
 
@@ -78,8 +74,6 @@ ds = Dataset.Tabular.from_delimited_files(path=web_path)
 # -
 
 x, y = clean_data(ds)
-
-# TODO: Split data into train and test sets.
 
 # +
 from sklearn.model_selection import train_test_split
