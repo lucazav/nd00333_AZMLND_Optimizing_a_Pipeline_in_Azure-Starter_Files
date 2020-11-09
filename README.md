@@ -7,7 +7,7 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. The goal is to predict whether a product will be subscribed by the customer contacted.
+The data is related with direct marketing campaigns of a Portuguese banking institution and it was made available by Kaggle [here](https://www.kaggle.com/yufengsui/portuguese-bank-marketing-data-set).  The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. The goal is to predict whether a product will be subscribed by the customer contacted.
 
 The best performing model was a VotingEnsemble algorithm (accuracy of 0.91809) resulting from an Azure AutoML run.
 
